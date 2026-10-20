@@ -1,0 +1,66 @@
+{
+ "n": 120,
+ "median_share": 0.187,
+ "share_quartiles_p10_p25_p50_p75_p90": [
+  0.029,
+  0.079,
+  0.187,
+  0.332,
+  0.522
+ ],
+ "n_share_ge_0.5": 15,
+ "on_sheet_cm2": 199.5,
+ "valid_cm2": 1007.5,
+ "by_source": {
+  "Bullo27/first-letters-survey": {
+   "n": 50,
+   "median_share": 0.083,
+   "n_share_ge_0.5": 1
+  },
+  "flummoxjr/gp13-ink-detectability": {
+   "n": 46,
+   "median_share": 0.357,
+   "n_share_ge_0.5": 14
+  },
+  "kadenpool/scroll-lineup": {
+   "n": 20,
+   "median_share": 0.165,
+   "n_share_ge_0.5": 0
+  },
+  "pscamillo/vesuvius-eligible-meshes": {
+   "n": 4,
+   "median_share": 0.215,
+   "n_share_ge_0.5": 0
+  }
+ },
+ "by_name_kind": {
+  "name contains auto_grown": {
+   "n": 46,
+   "median_share": 0.357,
+   "n_share_ge_0.5": 14
+  },
+  "other names": {
+   "n": 74,
+   "median_share": 0.116,
+   "n_share_ge_0.5": 1
+  }
+ },
+ "validation_from_X-202": {
+  "V1_heldout_known_writing": "0.74 / 0.74 / 0.96",
+  "nulls": "0.000 (depth shuffle) / 0.005 (spatial shuffle)",
+  "V2": {
+   "flat": {
+    "PHerc0800_z15264_w100": 0.1440677966101695,
+    "PHerc0826_auto_grown_20260902140900360": 0.64
+   },
+   "swirl": {
+    "PHerc0826_v3_s0": 0.3520408163265306,
+    "PHerc0358_v3_s7": 0.1377551020408163,
+    "PHerc0257_v2_s0": 0.015306122448979591,
+    "PHerc1203_v3_s0": 0.08163265306122448
+   },
+   "auc_all6": 0.875,
+   "auc_unseen_pair": 0.5
+  }
+ }
+}

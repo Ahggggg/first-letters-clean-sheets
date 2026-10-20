@@ -1,0 +1,90 @@
+[
+ {
+  "patch": "PHerc0813_t269_s000",
+  "stored_rows": [
+   69,
+   117
+  ],
+  "stored_cols": [
+   58,
+   133
+  ],
+  "stored_nodes": 3600,
+  "recut_rows": [
+   69,
+   117
+  ],
+  "recut_cols": [
+   58,
+   133
+  ],
+  "recut_nodes": 3600,
+  "identical": true
+ },
+ {
+  "patch": "PHerc1545_t269_s000",
+  "stored_rows": [
+   11,
+   66
+  ],
+  "stored_cols": [
+   42,
+   98
+  ],
+  "stored_nodes": 3080,
+  "recut_rows": [
+   11,
+   66
+  ],
+  "recut_cols": [
+   42,
+   98
+  ],
+  "recut_nodes": 3080,
+  "identical": true
+ },
+ {
+  "patch": "PHerc0826B_t269_s001",
+  "stored_rows": [
+   2,
+   150
+  ],
+  "stored_cols": [
+   87,
+   150
+  ],
+  "stored_nodes": 9324,
+  "recut_rows": [
+   2,
+   150
+  ],
+  "recut_cols": [
+   87,
+   150
+  ],
+  "recut_nodes": 9324,
+  "identical": true
+ },
+ {
+  "patch": "PHerc0358_t269_s002",
+  "stored_rows": [
+   78,
+   149
+  ],
+  "stored_cols": [
+   25,
+   90
+  ],
+  "stored_nodes": 4615,
+  "recut_rows": [
+   78,
+   149
+  ],
+  "recut_cols": [
+   25,
+   90
+  ],
+  "recut_nodes": 4615,
+  "identical": true
+ }
+]

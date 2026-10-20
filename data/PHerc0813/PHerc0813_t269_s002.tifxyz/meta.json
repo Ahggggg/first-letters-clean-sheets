@@ -1,0 +1,70 @@
+{
+ "format": "tifxyz",
+ "type": "seg",
+ "uuid": "PHerc0813_t269_s002",
+ "scale": [
+  0.05000000074505806,
+  0.05000000074505806
+ ],
+ "bbox": [
+  [
+   4600.37939453125,
+   2940.191162109375,
+   9623.8798828125
+  ],
+  [
+   5793.9716796875,
+   3978.96728515625,
+   11125.029296875
+  ]
+ ],
+ "area_cm2": 1.354917005055607,
+ "area_vx2": 1545878.7235946103,
+ "voxel_size_um": 9.362,
+ "voxelsize": 9.362,
+ "scroll": "PHerc0813",
+ "volume_id": "20250821151723",
+ "volume_shape_zyx": [
+  16993,
+  7947,
+  7947
+ ],
+ "source": "vc_grow_seg_from_seed",
+ "vc_gsfs_version": "dev",
+ "seed": [
+  4912.0,
+  2926.0,
+  9500.0
+ ],
+ "target_volume": "pred.zarr",
+ "max_gen": 75,
+ "vc_gsfs_params": {
+  "generations": 75,
+  "min_area_cm": 0.3,
+  "mode": "seed",
+  "thread_limit": 1,
+  "use_cuda": false,
+  "voxelsize": 9.362
+ },
+ "elapsed_time_s_whole_trace": 1272.537577357,
+ "clean_patch": {
+  "crop_rows_of_trace_grid_half_open": [
+   18,
+   78
+  ],
+  "crop_cols_of_trace_grid_half_open": [
+   88,
+   149
+  ],
+  "nodes": 3660,
+  "frame_side": -1,
+  "frame_correct_order": "R",
+  "node_spacing_vox_median": 20.551672339612942,
+  "area_cm2_note": "nodes x (median edge x voxel size)^2, the area quoted in index.csv",
+  "source_experiment": "X-213",
+  "trace_id": "PHerc0813_s002",
+  "round": 1
+ },
+ "note": "Rectangle cut from a larger trace made with villa's vc_grow_seg_from_seed on the public m7 surface prediction; all nodes pass the mesh-level clean rules of code/tifxyz_audit.py.  Mesh only: no check beyond the mesh and cross-sections in qa/.",
+ "license": "CC BY-NC 4.0 (derived from Vesuvius Challenge scan data and prediction, which are CC BY-NC 4.0)"
+}

@@ -1,0 +1,4 @@
+The project's tracing scripts exactly as run (X-209..X-213 in the project record), kept for provenance. They import project-internal modules (download guard, renderer, ledgers) and use its folder layout, so they do not
+run outside it; read them as documentation. Cleaned standalone versions of the parts that matter are one level up (`make_seeds.py`, `cut_patches.py`, `trace_round.py`, `fetch_mirror.py`).
+common267/268/269 = constants and helpers; seeds268 = seed rule; audit268 = clean rectangle; drive268/drive269 = the round driver (Docker); fetch267/fetch268/fetch269 = data fetch (with the project's download meter);
+sites269 = mirror-block rule from the on-sheet ranking; chain269 = the overnight chain; read268/read269 = the render-and-read wrappers; picture268 = the 40 um/px picture; run_tracer267.sh = the first single-container launcher.

@@ -1,0 +1,10 @@
+{
+ "patches": 90,
+ "patches_with_nonfinite_nodes": [],
+ "total_nodes": 546408,
+ "reproduction_identical": 4,
+ "reproduction_n": 4,
+ "overlap_patches_with_any_overlap": 0,
+ "overlap_max_share": 0.0,
+ "overlap_nodes": 0
+}

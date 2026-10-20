@@ -1,0 +1,19 @@
+{
+ "stack": "PHerc0813_t269_s000",
+ "block": [
+  384,
+  1000,
+  256,
+  256
+ ],
+ "canvas": [
+  940,
+  1480
+ ],
+ "valid_px_equal": true,
+ "compared": 1835008,
+ "share_within_1": 1.0,
+ "max_abs_diff": 1,
+ "unknown_samples": 0,
+ "pass": true
+}
