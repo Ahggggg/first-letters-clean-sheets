@@ -89,6 +89,10 @@ The finding we can stand behind is therefore narrower than "public auto-grown su
 - Make more patches: `recipe/README.md` (download a mirror block, Docker volume, trace rounds, cut). Needs about 6 GB of download and a few hours per 16 traces; Windows with Docker Desktop was used. The seed rule (`make_seeds.py`) reproduced all 9 stored seeds we tried; `fetch_mirror.py` and `trace_round.py` are cleaned copies of code that ran and were not re-run in this form.
 - The QA pictures need the stored 28-plane stacks and reader maps, which are not included (about 6 GB; the readers' weights are public); `code/as_run/` shows how they were built.
 
+## Authors
+
+Jack Gilman and Andrew Gilman.
+
 ## Credits
 
 Vesuvius Challenge: the scans, the open-data bucket, the public m7 surface prediction and its normal grids, and villa's volume-cartographer (`vc_grow_seg_from_seed`, `ghcr.io/scrollprize/villa/volume-cartographer:main`, github.com/ScrollPrize/villa). Reader v2: DomRusso2/reader-v2. d9v4C: TAUIL's shape-loss fine-tune of Reader v2. Survey and surface lists we used as controls and baselines: Bullo27 (first-letters-survey), pscamillo (vesuvius-eligible-meshes and his published ink maps), flummoxjr (gp13-ink-detectability), kadenpool (scroll-lineup). We did not write any of these tools or models; the patches, checks, cross-section measure and recipe are ours.
