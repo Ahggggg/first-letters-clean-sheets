@@ -2,7 +2,7 @@
 
 90 self-traced, mesh-level "clean" single-sheet patches of Herculaneum scroll surface (193.5 cm2 in all, 1.0-8.4 cm2 each, six scrolls, all scanned at 9.362 um), cut from traces grown with villa's own `vc_grow_seg_from_seed` on the public m7 surface prediction, each with a QA picture (flattened scan render, two CT cross-sections, frame-correct Reader v2 / d9v4C map at 40 um per pixel), plus the recipe for making more of them on a laptop, and a rough tile score ("on-sheet score") with its ranking of 120 public surfaces. The patches are meshes that were checked for one frame side, no folds and no stretched edges; the CT cross-sections show that most of them look like the flat public surfaces and unlike the swirled ones, but they do **not** prove that a patch lies on one papyrus layer. Reader v2 and d9v4C give speckle and blob fields on all 193.5 cm2 in both reading orders; we found no letters.
 
-Status: contributed for the Vesuvius Challenge Progress Prize (October 2026). Everything here was made on one laptop with free compute. This is a local staging copy, not yet published.
+Status: contributed for the Vesuvius Challenge Progress Prize (October 2026). Everything here was made on one laptop with free compute. Published 2026-10-19; more patches may be added as the tracing run finishes.
 
 ## What is here
 
