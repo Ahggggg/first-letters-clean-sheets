@@ -1,7 +1,7 @@
 {
- "patches": 90,
+ "patches": 172,
  "patches_with_nonfinite_nodes": [],
- "total_nodes": 546408,
+ "total_nodes": 1017802,
  "reproduction_identical": 4,
  "reproduction_n": 4,
  "overlap_patches_with_any_overlap": 0,

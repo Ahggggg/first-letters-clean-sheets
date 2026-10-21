@@ -67,6 +67,7 @@ def collect():
     if f275.exists():
         d = jl(f275)
         traces = all_traces("t275")
+        sup275 = jl(PROB / "data/t275-trace/support.json") if (PROB / "data/t275-trace/support.json").exists() else {}
         for p in d["patches"]:
             if not (PROB / f"data/t275-trace/render/maps/{p['name']}.npz").exists():
                 continue
@@ -74,7 +75,7 @@ def collect():
             recs.append({"name": p["name"], "scroll": p["scroll"], "run": "t275", "experiment": "X-217", "task": "T-275", "mesh": PROB / f"data/t275-trace/render/meshes/{p['name']}.tifxyz", "round": p["round"],
                          "tid": p["tid"], "seed": p["seed"], "rows": p["rows"], "cols": p["cols"], "nodes": p["nodes"], "cm2": p["cm2"], "side": p["side"], "frame_correct": p["frame_correct"],
                          "median_edge_vox": p["median_edge_vox"], "trace_frame_minority": p["trace_frame_minority"], "trace_fold_share": p["trace_fold_share"], "trace_stretch_share": p["trace_stretch_share"],
-                         "generations": t.get("max_gen", 75), "tracer_seconds": t.get("tracer_seconds"), "wall_outside_share": t.get("wall_outside_share"), "on_prediction_share": None,
+                         "generations": t.get("max_gen", 75), "tracer_seconds": t.get("tracer_seconds"), "wall_outside_share": t.get("wall_outside_share"), "on_prediction_share": sup275.get(p["name"], {}).get("on_prediction_share"),
                          "nonfinite": p["nonfinite_valid_px"], "picture": PROB / f"outputs/t275-trace/{p['name']}.png", "maps": Path(p["maps_npz"]), "stack": PROB / f"data/t275-trace/render/stacks/{p['name']}.npy",
                          "um_per_canvas_px": p["um_per_canvas_px"], "site": p.get("site", p["scroll"]), "read_summary": p["summary"]})
     return recs

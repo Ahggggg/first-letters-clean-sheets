@@ -46,6 +46,15 @@ def patch_list():
             mesh = PROB / f"data/{tn}-trace/render/meshes/{name}.tifxyz"
             out.append({"name": name, "scroll": p["scroll"], "run": tn, "mesh": mesh, "stack": PROB / f"data/{tn}-trace/render/stacks/{name}.npy",
                         "side": p.get("side"), "stack_valid": PROB / f"data/{tn}-trace/render/stacks/{name}.valid.npy"})
+    # 2026-10-21 extension (same measure, same parameters): the finished T-275 (X-217) patches that were rendered and read, appended AFTER the first 90 so that their order (and the rng stream) is unchanged
+    f275 = PROB / "data/t275-trace/index.json"
+    if f275.exists():
+        for p in json.loads(f275.read_text())["patches"]:
+            name = p["name"]
+            if not (PROB / f"data/t275-trace/render/maps/{name}.npz").exists():
+                continue
+            out.append({"name": name, "scroll": p["scroll"], "run": "t275", "mesh": PROB / f"data/t275-trace/render/meshes/{name}.tifxyz", "stack": PROB / f"data/t275-trace/render/stacks/{name}.npy",
+                        "side": p.get("side"), "stack_valid": PROB / f"data/t275-trace/render/stacks/{name}.valid.npy"})
     return out
 
 
