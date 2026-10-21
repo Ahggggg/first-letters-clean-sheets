@@ -1,14 +1,14 @@
 {
- "n_patches": 172,
- "n_sections": 1720,
- "n_informative": 1720,
+ "n_patches": 173,
+ "n_sections": 1730,
+ "n_informative": 1730,
  "share_informative": 1.0,
- "patches_with_ge3_informative": 172,
- "uncached_cols_share": 0.003598083235860091,
+ "patches_with_ge3_informative": 173,
+ "uncached_cols_share": 0.0035731414868105517,
  "patch_median_abs_tilt_all_informative": 0.9669680100985829,
- "patch_median_abs_drift_all_informative": 24.213321885839452,
- "share_informative_sections_drift_ge_20": 0.5790697674418605,
- "share_patches_median_drift_lt_20": 0.37209302325581395,
+ "patch_median_abs_drift_all_informative": 24.244556456076722,
+ "share_informative_sections_drift_ge_20": 0.5791907514450867,
+ "share_patches_median_drift_lt_20": 0.3699421965317919,
  "controls": {
   "flat": {
    "n_sections": 30,
@@ -142,8 +142,8 @@
    "median_of_patch_median_abs_tilt": 0.8383195077395769
   },
   "PHerc0826": {
-   "patches": 79,
-   "median_of_patch_median_abs_tilt": 0.9273283152933516
+   "patches": 80,
+   "median_of_patch_median_abs_tilt": 0.9315173530185739
   },
   "PHerc0846B": {
    "patches": 2,
@@ -1590,6 +1590,16 @@
    "share_drift_ge_20": 0.4
   },
   {
+   "name": "PHerc0826B_t275_s064",
+   "scroll": "PHerc0826",
+   "run": "t275",
+   "n_sections": 10,
+   "n_informative": 10,
+   "median_abs_tilt": 1.0307493992967949,
+   "median_abs_drift": 28.987827944217383,
+   "share_drift_ge_20": 0.6
+  },
+  {
    "name": "PHerc0826B_t275_s065",
    "scroll": "PHerc0826",
    "run": "t275",
@@ -1896,6 +1906,6 @@
    ]
   ],
   "median_off": 0.8762541564997335,
-  "median_other_0826": 0.9315173530185739
+  "median_other_0826": 0.9357063907437961
  }
 }
