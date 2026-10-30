@@ -9,7 +9,7 @@ Status: contributed for the Vesuvius Challenge Progress Prize (October 2026). Ev
 | path | what |
 |---|---|
 | `data/<scroll>/<patch>.tifxyz/` | the patch as a tifxyz (`x.tif`, `y.tif`, `z.tif`, `meta.json`), cropped to the clean rectangle. Coordinates are level-0 voxels (x, y, z) of the scan named in `meta.json`; `scale` 0.05 means nodes are about 20 voxels apart; `meta.json` has `voxel_size_um` (9.362 or 8.64), `volume_id`, `volume_shape_zyx`, the tracer `seed`, and a `clean_patch` block. |
-| `index.csv` | one row per patch: scroll, volume id, voxel um, seed, area cm2, frame minority, fold share, frame-correct reading order, source run, and more (see below). |
+| `index.csv` | one row per patch: scroll, volume id, voxel um, seed, area cm2, frame minority, fold share, frame-correct reading order, source run, and more (see below). The five `lh_*` columns are LynnHenry's independent sheet-contrast check and `vc_render_tifxyz` reading order for each patch (from [LynnHenry/sheet-contrast-check](https://github.com/LynnHenry/sheet-contrast-check) `data/clean_sheets_pass_fail.csv`, commit 53486e7): `lh_sheet_check` is pass for the 79 patches whose sheet contrast reaches the weakest curated control of the same scan protocol. |
 | `qa/<scroll>/<patch>_qa.png` | the QA picture. `<patch>_both_orders.png` is the project's original ink-map picture in both reading orders. |
 | `xsec/` | the CT cross-section measurements for every patch (10 sections each) and for six public control surfaces, plus the two gate checks. |
 | `onsheet/` | the on-sheet tile score code (as run), thresholds, the 120-surface ranking table, group statistics and six example pictures. |
@@ -104,7 +104,7 @@ Jack Gilman and Andrew Gilman.
 
 ## Credits
 
-Vesuvius Challenge: the scans, the open-data bucket, the public m7 surface prediction and its normal grids, and villa's volume-cartographer (`vc_grow_seg_from_seed`, `ghcr.io/scrollprize/villa/volume-cartographer:main`, github.com/ScrollPrize/villa). Reader v2: DomRusso2/reader-v2. d9v4C: TAUIL's shape-loss fine-tune of Reader v2. Survey and surface lists we used as controls and baselines: Bullo27 (first-letters-survey), pscamillo (vesuvius-eligible-meshes and his published ink maps), flummoxjr (gp13-ink-detectability), kadenpool (scroll-lineup). We did not write any of these tools or models; the patches, checks, cross-section measure and recipe are ours.
+Vesuvius Challenge: the scans, the open-data bucket, the public m7 surface prediction and its normal grids, and villa's volume-cartographer (`vc_grow_seg_from_seed`, `ghcr.io/scrollprize/villa/volume-cartographer:main`, github.com/ScrollPrize/villa). Reader v2: DomRusso2/reader-v2. d9v4C: TAUIL's shape-loss fine-tune of Reader v2. Survey and surface lists we used as controls and baselines: Bullo27 (first-letters-survey), pscamillo (vesuvius-eligible-meshes and his published ink maps), flummoxjr (gp13-ink-detectability), kadenpool (scroll-lineup). LynnHenry ([sheet-contrast-check](https://github.com/LynnHenry/sheet-contrast-check)): the per-patch sheet-contrast results and `vc_render_tifxyz` reading order in the `lh_*` columns of `index.csv` (CC BY-NC 4.0), and the finding that our F/R convention is reversed for `vc_render_tifxyz` renders. We did not write any of these tools or models; the patches, checks, cross-section measure and recipe are ours.
 
 ## Licence
 
